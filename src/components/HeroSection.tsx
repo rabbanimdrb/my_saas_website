@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import ContactSalesButton from "@/components/ContactSalesButton";
 import heroDashboard from "@/assets/hero-dashboard.png";
 
 const HeroSection = () => {
@@ -32,10 +33,10 @@ const HeroSection = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Button size="lg" className="text-base px-8 py-6 bg-primary hover:bg-primary/90 glow-primary">
+            <ContactSalesButton size="lg" className="text-base px-8 py-6 bg-primary hover:bg-primary/90 glow-primary">
               Contact Sales
               <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
+            </ContactSalesButton>
             <Button size="lg" variant="outline" className="text-base px-8 py-6 border-white/10 text-hero-foreground hover:bg-white/5 bg-transparent">
               Watch Demo
             </Button>

@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import ContactSalesButton from "@/components/ContactSalesButton";
+import { useContactSales } from "@/contexts/ContactSalesContext";
 import { motion, AnimatePresence } from "framer-motion";
 
 const navLinks = [
@@ -12,6 +14,7 @@ const navLinks = [
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
+  const { count } = useContactSales();
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-hero/80 backdrop-blur-xl border-b border-white/5">
@@ -36,9 +39,10 @@ const Navbar = () => {
           <Button variant="ghost" size="sm" className="text-hero-muted hover:text-hero-foreground hover:bg-white/5">
             Log In
           </Button>
-          <Button size="sm" className="bg-primary hover:bg-primary/90">
+          <ContactSalesButton size="sm" className="bg-primary hover:bg-primary/90">
             Contact Sales
-          </Button>
+          </ContactSalesButton>
+          <span className="text-sm text-hero-muted">({count})</span>
         </div>
 
         <button className="md:hidden text-hero-foreground" onClick={() => setOpen(!open)}>
@@ -60,7 +64,9 @@ const Navbar = () => {
                   {link.label}
                 </a>
               ))}
-              <Button className="mt-2 w-full">Contact Sales</Button>
+              <ContactSalesButton className="mt-2 w-full">
+                Contact Sales
+              </ContactSalesButton>
             </div>
           </motion.div>
         )}

@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import ContactSalesButton from "@/components/ContactSalesButton";
 
 const CTASection = () => {
   return (
@@ -23,10 +24,10 @@ const CTASection = () => {
           <p className="text-lg md:text-xl text-hero-muted mb-10 max-w-2xl mx-auto">
             Join hundreds of sales teams already using NexusAI to crush their targets. Book a personalized demo today.
           </p>
-          <Button size="lg" className="text-base px-10 py-6 bg-primary hover:bg-primary/90 glow-primary">
+          <ContactSalesButton size="lg" className="text-base px-10 py-6 bg-primary hover:bg-primary/90 glow-primary">
             Contact Sales
             <ArrowRight className="ml-2 h-5 w-5" />
-          </Button>
+          </ContactSalesButton>
         </motion.div>
       </div>
     </section>
