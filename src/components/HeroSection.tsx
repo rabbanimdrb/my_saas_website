@@ -52,7 +52,7 @@ const HeroSection = () => {
           <div className="relative rounded-2xl overflow-hidden border border-white/10 glow-primary">
             <img
               src={heroDashboard}
-              alt="NexusAI sales dashboard showing pipeline analytics, conversations, and performance metrics"
+              alt="Client Orbit sales dashboard showing pipeline analytics, conversations, and performance metrics"
               className="w-full h-auto"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-hero via-transparent to-transparent" />
