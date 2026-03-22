@@ -16,7 +16,7 @@ const faqs = [
   },
   {
     q: "Does it replace my existing CRM?",
-    a: "NexusAI can work as your primary CRM or integrate alongside Salesforce, HubSpot, and others. Many teams use NexusAI for execution and sync data back to their existing CRM for reporting.",
+    a: "Client Orbit can work as your primary CRM or integrate alongside Salesforce, HubSpot, and others. Many teams use Client Orbit for execution and sync data back to their existing CRM for reporting.",
   },
   {
     q: "What kind of ROI can I expect?",
