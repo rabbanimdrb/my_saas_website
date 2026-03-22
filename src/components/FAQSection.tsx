@@ -8,7 +8,7 @@ const faqs = [
   },
   {
     q: "Can I use my existing phone numbers and WhatsApp?",
-    a: "Yes. NexusAI integrates with your existing phone numbers via Twilio and connects to the official WhatsApp Business API. Your leads will see messages from your brand, not ours.",
+    a: "Yes. Client Orbit integrates with your existing phone numbers via Twilio and connects to the official WhatsApp Business API. Your leads will see messages from your brand, not ours.",
   },
   {
     q: "How long does setup take?",
