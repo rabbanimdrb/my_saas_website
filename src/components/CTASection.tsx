@@ -22,7 +22,7 @@ const CTASection = () => {
             Ready to Let AI <span className="text-gradient">Close Your Deals?</span>
           </h2>
           <p className="text-lg md:text-xl text-hero-muted mb-10 max-w-2xl mx-auto">
-            Join hundreds of sales teams already using Client Orbit to crush their targets. Book a personalized demo today.
+            Join hundreds of sales teams already using Pulsive to crush their targets. Book a personalized demo today.
           </p>
           <ContactSalesButton size="lg" className="text-base px-10 py-6 bg-primary hover:bg-primary/90 glow-primary">
             Contact Sales

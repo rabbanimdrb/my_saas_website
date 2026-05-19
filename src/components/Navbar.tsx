@@ -21,8 +21,8 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-hero/80 backdrop-blur-xl border-b border-white/5">
       <div className="container mx-auto flex items-center justify-between h-16 px-4 lg:px-8">
         <a href="#" className="flex items-center gap-2">
-          <img src={logo} alt="Client Orbit" className="h-9 w-auto" />
-          <span className="font-display text-xl font-bold text-hero-foreground tracking-tight">Client Orbit</span>
+          <img src={logo} alt="Pulsive" className="h-9 w-auto" />
+          <span className="font-display text-xl font-bold text-hero-foreground tracking-tight">Pulsive</span>
         </a>
 
         <div className="hidden md:flex items-center gap-8">

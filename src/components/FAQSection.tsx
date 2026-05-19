@@ -8,7 +8,7 @@ const faqs = [
   },
   {
     q: "Can I use my existing phone numbers and WhatsApp?",
-    a: "Yes. Client Orbit integrates with your existing phone numbers via Twilio and connects to the official WhatsApp Business API. Your leads will see messages from your brand, not ours.",
+    a: "Yes. Pulsive integrates with your existing phone numbers via Twilio and connects to the official WhatsApp Business API. Your leads will see messages from your brand, not ours.",
   },
   {
     q: "How long does setup take?",
@@ -16,7 +16,7 @@ const faqs = [
   },
   {
     q: "Does it replace my existing CRM?",
-    a: "Client Orbit can work as your primary CRM or integrate alongside Salesforce, HubSpot, and others. Many teams use Client Orbit for execution and sync data back to their existing CRM for reporting.",
+    a: "Pulsive can work as your primary CRM or integrate alongside Salesforce, HubSpot, and others. Many teams use Pulsive for execution and sync data back to their existing CRM for reporting.",
   },
   {
     q: "What kind of ROI can I expect?",

@@ -3,7 +3,7 @@ import { Star } from "lucide-react";
 
 const testimonials = [
   {
-    quote: "We replaced 3 SDRs with Client Orbit's voice agent. Our pipeline is 2x bigger and our cost per lead dropped by 60%.",
+    quote: "We replaced 3 SDRs with Pulsive's voice agent. Our pipeline is 2x bigger and our cost per lead dropped by 60%.",
     name: "Sarah Chen",
     role: "VP of Sales, TechScale",
   },
