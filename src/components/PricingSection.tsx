@@ -40,7 +40,7 @@ const PricingSection = () => {
           transition={{ duration: 0.6, delay: 0.1 }}
           className="max-w-md mx-auto"
         >
-          <div className="relative rounded-2xl border border-primary/40 bg-card p-8 shadow-2xl">
+          <div className="relative rounded-2xl border border-primary/40 bg-hero p-8 shadow-2xl">
             {/* Early bird badge */}
             <div className="absolute -top-4 left-1/2 -translate-x-1/2">
               <span className="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full bg-accent text-accent-foreground text-xs font-bold uppercase tracking-widest shadow-lg">
@@ -53,7 +53,7 @@ const PricingSection = () => {
               <p className="text-hero-muted text-sm mb-2">Early Adopter Plan</p>
               <div className="flex items-end justify-center gap-1">
                 <span className="text-hero-muted text-lg">₹</span>
-                <span className="font-display text-6xl font-bold text-hero-foreground">30,000</span>
+                <span className="font-display text-6xl font-bold text-white">30,000</span>
               </div>
               <p className="text-hero-muted text-sm mt-1">+ GST &nbsp;/&nbsp; year</p>
             </div>
