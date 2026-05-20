@@ -7,13 +7,12 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           <a href="#" className="flex items-center gap-2">
             <img src={logo} alt="Pulsive" className="h-8 w-auto" />
-            <span className="font-display text-xl font-semibold text-hero-foreground tracking-tight">Pulsive</span>
           </a>
           <div className="flex items-center gap-8">
             {["Privacy", "Terms", "Security"].map((link) => (
-              <a key={link} href="#" className="text-sm text-hero-muted hover:text-hero-foreground transition-colors">
+              <span key={link} className="text-sm text-hero-muted/50 cursor-not-allowed" title="Coming soon">
                 {link}
-              </a>
+              </span>
             ))}
           </div>
           <p className="text-sm text-hero-muted">© 2026 Pulsive. All rights reserved.</p>

@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowRight } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { ArrowRight, PlayCircle } from "lucide-react";
 import ContactSalesButton from "@/components/ContactSalesButton";
 import heroDashboard from "@/assets/hero-dashboard.png";
 
@@ -18,7 +17,7 @@ const HeroSection = () => {
           transition={{ duration: 0.7 }}
           className="text-center max-w-4xl mx-auto"
         >
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-primary/30 bg-primary/10 text-primary text-sm font-medium mb-8">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-accent/30 bg-accent/10 text-accent text-sm font-medium mb-8">
             <span className="w-2 h-2 rounded-full bg-accent animate-pulse" />
             AI-Powered Sales Execution Platform
           </div>
@@ -37,9 +36,10 @@ const HeroSection = () => {
               Contact Sales
               <ArrowRight className="ml-2 h-5 w-5" />
             </ContactSalesButton>
-            <Button size="lg" variant="outline" className="text-base px-8 py-6 border-white/10 text-hero-foreground hover:bg-white/5 bg-transparent">
-              Watch Demo
-            </Button>
+            <ContactSalesButton size="lg" className="text-base px-8 py-6 border border-white/10 text-hero-foreground hover:bg-white/5 bg-transparent">
+              <PlayCircle className="mr-2 h-5 w-5" />
+              Book a Live Demo
+            </ContactSalesButton>
           </div>
         </motion.div>
 

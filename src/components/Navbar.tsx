@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
-import { Button } from "@/components/ui/button";
 import ContactSalesButton from "@/components/ContactSalesButton";
 import { useContactSales } from "@/contexts/ContactSalesContext";
 import { motion, AnimatePresence } from "framer-motion";
@@ -23,7 +22,6 @@ const Navbar = () => {
       <div className="container mx-auto flex items-center justify-between h-16 px-4 lg:px-8">
         <a href="#" className="flex items-center gap-2">
           <img src={logo} alt="Pulsive" className="h-9 w-auto" />
-          <span className="font-display text-xl font-semibold text-hero-foreground tracking-tight">Pulsive</span>
         </a>
 
         <div className="hidden md:flex items-center gap-8">
@@ -31,7 +29,7 @@ const Navbar = () => {
             <a
               key={link.label}
               href={link.href}
-              className="text-sm text-hero-muted hover:text-hero-foreground transition-colors"
+              className="text-sm text-hero-foreground/70 hover:text-hero-foreground transition-colors"
             >
               {link.label}
             </a>
@@ -39,13 +37,15 @@ const Navbar = () => {
         </div>
 
         <div className="hidden md:flex items-center gap-3">
-          <Button variant="ghost" size="sm" className="text-hero-muted hover:text-hero-foreground hover:bg-white/5">
-            Log In
-          </Button>
+          <span className="text-xs font-medium text-hero-foreground/60 border border-white/15 rounded-full px-3 py-1 bg-white/5">
+            Launching Q3 2026
+          </span>
           <ContactSalesButton size="sm" className="bg-primary hover:bg-primary/90">
             Contact Sales
           </ContactSalesButton>
-          <span className="text-sm text-hero-muted">({count})</span>
+          {count > 0 && (
+            <span className="text-xs text-accent font-medium">{count} interested</span>
+          )}
         </div>
 
         <button className="md:hidden text-hero-foreground" onClick={() => setOpen(!open)}>
@@ -63,7 +63,7 @@ const Navbar = () => {
           >
             <div className="container px-4 py-4 flex flex-col gap-3">
               {navLinks.map((link) => (
-                <a key={link.label} href={link.href} className="text-hero-muted hover:text-hero-foreground py-2" onClick={() => setOpen(false)}>
+                <a key={link.label} href={link.href} className="text-hero-foreground/70 hover:text-hero-foreground py-2" onClick={() => setOpen(false)}>
                   {link.label}
                 </a>
               ))}

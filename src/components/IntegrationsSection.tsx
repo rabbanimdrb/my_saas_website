@@ -21,7 +21,7 @@ const IntegrationsSection = () => {
             Connects With Your <span className="text-gradient">Entire Stack</span>
           </h2>
           <p className="text-lg text-hero-muted">
-            Plug into the tools you already use. Sync data bi-directionally and automate across platforms.
+            Plug into the tools your team already uses — no migration headaches. Bi-directional sync out of the box.
           </p>
         </motion.div>
 
