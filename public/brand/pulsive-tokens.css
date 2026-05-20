@@ -1,0 +1,84 @@
+/* ============================================
+   Pulsive Brand · Color Tokens
+   Drop this file into your stylesheet root.
+   ============================================ */
+
+:root {
+  /* ---------- Brand core ---------- */
+  --pulsive-primary:        #0B3D91;  /* Pulsive Blue · the brand */
+  --pulsive-accent:         #06B6D4;  /* Live Signal · use sparingly */
+
+  /* ---------- Primary ramp ---------- */
+  --pulsive-blue-50:        #F0F4FB;
+  --pulsive-blue-100:       #D6E1F2;
+  --pulsive-blue-200:       #A8BFE0;
+  --pulsive-blue-300:       #6E92CA;
+  --pulsive-blue-400:       #3D6BB0;
+  --pulsive-blue-500:       #0B3D91;  /* = primary */
+  --pulsive-blue-600:       #082E6E;
+  --pulsive-blue-700:       #062354;
+  --pulsive-blue-800:       #03173B;
+
+  /* ---------- Warm neutrals ---------- */
+  --neutral-50:             #FAFAF7;  /* page background */
+  --neutral-100:            #F2F1EC;  /* card hover */
+  --neutral-200:            #E2E0D8;  /* borders */
+  --neutral-300:            #C2BFB4;  /* disabled */
+  --neutral-400:            #8E8B80;  /* muted text */
+  --neutral-500:            #605D54;  /* secondary text */
+  --neutral-600:            #3C3A33;  /* body text */
+  --neutral-700:            #26241F;  /* strong text */
+  --neutral-800:            #14130F;  /* headings / dark bg */
+
+  /* ---------- Semantic ---------- */
+  --success:                #15803D;
+  --success-bg:             #DCFCE7;
+  --success-text:           #14532D;
+
+  --warning:                #B45309;
+  --warning-bg:             #FEF3C7;
+  --warning-text:           #78350F;
+
+  --danger:                 #B91C1C;
+  --danger-bg:              #FEE2E2;
+  --danger-text:            #7F1D1D;
+
+  --info:                   #0369A1;
+  --info-bg:                #E0F2FE;
+  --info-text:              #0C4A6E;
+
+  /* ---------- Data viz ---------- */
+  --chart-1:                #0B3D91;  /* Brand */
+  --chart-2:                #06B6D4;  /* Live */
+  --chart-3:                #7C3AED;  /* Plum */
+  --chart-4:                #15803D;  /* Pine */
+  --chart-5:                #D97706;  /* Amber */
+  --chart-6:                #DB2777;  /* Rose */
+
+  /* ---------- Surfaces ---------- */
+  --surface-page:           var(--neutral-50);
+  --surface-card:           #FFFFFF;
+  --surface-card-hover:     var(--neutral-100);
+  --border-default:         var(--neutral-200);
+  --border-strong:          var(--neutral-300);
+
+  /* ---------- Text ---------- */
+  --text-primary:           var(--neutral-800);
+  --text-body:              var(--neutral-600);
+  --text-muted:             var(--neutral-400);
+  --text-on-brand:          #FFFFFF;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --surface-page:         var(--neutral-800);
+    --surface-card:         var(--neutral-700);
+    --surface-card-hover:   var(--neutral-600);
+    --border-default:       rgba(255, 255, 255, 0.08);
+    --border-strong:        rgba(255, 255, 255, 0.16);
+
+    --text-primary:         #FFFFFF;
+    --text-body:            var(--neutral-200);
+    --text-muted:           var(--neutral-400);
+  }
+}

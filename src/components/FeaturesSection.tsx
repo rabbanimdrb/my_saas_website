@@ -56,7 +56,7 @@ const FeaturesSection = () => {
           className="text-center max-w-3xl mx-auto mb-16"
         >
           <p className="text-sm font-semibold text-accent uppercase tracking-widest mb-4">Features</p>
-          <h2 className="font-display text-3xl md:text-5xl font-bold text-foreground mb-6">
+          <h2 className="font-display text-3xl md:text-5xl font-semibold text-foreground mb-6">
             Everything You Need to <span className="text-gradient">Dominate Sales</span>
           </h2>
           <p className="text-lg text-muted-foreground">

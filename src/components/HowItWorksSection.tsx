@@ -34,7 +34,7 @@ const HowItWorksSection = () => {
           className="text-center max-w-3xl mx-auto mb-16"
         >
           <p className="text-sm font-semibold text-accent uppercase tracking-widest mb-4">How It Works</p>
-          <h2 className="font-display text-3xl md:text-5xl font-bold text-hero-foreground mb-6">
+          <h2 className="font-display text-3xl md:text-5xl font-semibold text-hero-foreground mb-6">
             Three Steps to <span className="text-gradient">Revenue Autopilot</span>
           </h2>
         </motion.div>
@@ -49,7 +49,7 @@ const HowItWorksSection = () => {
               transition={{ duration: 0.5, delay: i * 0.15 }}
               className="relative text-center p-8"
             >
-              <div className="text-6xl font-display font-bold text-white/5 absolute top-4 left-1/2 -translate-x-1/2">
+              <div className="text-6xl font-display font-semibold text-white/5 absolute top-4 left-1/2 -translate-x-1/2">
                 {s.step}
               </div>
               <div className="relative z-10">

@@ -23,7 +23,7 @@ const HeroSection = () => {
             AI-Powered Sales Execution Platform
           </div>
 
-          <h1 className="font-display text-4xl md:text-6xl lg:text-7xl font-bold text-hero-foreground leading-[1.1] mb-6">
+          <h1 className="font-display text-4xl md:text-6xl lg:text-7xl font-semibold text-hero-foreground leading-[1.1] mb-6">
             Your AI Sales Team That{" "}
             <span className="text-gradient">Never Sleeps</span>
           </h1>

@@ -40,7 +40,7 @@ const FAQSection = () => {
           className="text-center max-w-3xl mx-auto mb-16"
         >
           <p className="text-sm font-semibold text-accent uppercase tracking-widest mb-4">FAQ</p>
-          <h2 className="font-display text-3xl md:text-5xl font-bold text-foreground mb-6">
+          <h2 className="font-display text-3xl md:text-5xl font-semibold text-foreground mb-6">
             Got Questions?
           </h2>
         </motion.div>

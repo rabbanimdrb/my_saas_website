@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import ContactSalesButton from "@/components/ContactSalesButton";
 import { useContactSales } from "@/contexts/ContactSalesContext";
 import { motion, AnimatePresence } from "framer-motion";
-import logo from "@/assets/logo.png";
+import logo from "@/assets/logo-dark.svg";
 
 const navLinks = [
   { label: "Features", href: "#features" },
@@ -23,7 +23,7 @@ const Navbar = () => {
       <div className="container mx-auto flex items-center justify-between h-16 px-4 lg:px-8">
         <a href="#" className="flex items-center gap-2">
           <img src={logo} alt="Pulsive" className="h-9 w-auto" />
-          <span className="font-display text-xl font-bold text-hero-foreground tracking-tight">Pulsive</span>
+          <span className="font-display text-xl font-semibold text-hero-foreground tracking-tight">Pulsive</span>
         </a>
 
         <div className="hidden md:flex items-center gap-8">

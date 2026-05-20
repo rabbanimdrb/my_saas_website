@@ -17,7 +17,7 @@ const IntegrationsSection = () => {
           className="text-center max-w-3xl mx-auto mb-16"
         >
           <p className="text-sm font-semibold text-accent uppercase tracking-widest mb-4">Integrations</p>
-          <h2 className="font-display text-3xl md:text-5xl font-bold text-hero-foreground mb-6">
+          <h2 className="font-display text-3xl md:text-5xl font-semibold text-hero-foreground mb-6">
             Connects With Your <span className="text-gradient">Entire Stack</span>
           </h2>
           <p className="text-lg text-hero-muted">

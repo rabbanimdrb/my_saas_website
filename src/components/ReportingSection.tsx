@@ -13,7 +13,7 @@ const ReportingSection = () => {
             transition={{ duration: 0.6 }}
           >
             <p className="text-sm font-semibold text-accent uppercase tracking-widest mb-4">Custom Reporting</p>
-            <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-6">
+            <h2 className="font-display text-3xl md:text-4xl font-semibold text-foreground mb-6">
               Reports Built for <span className="text-gradient">Your Business</span>
             </h2>
             <p className="text-lg text-muted-foreground mb-8 leading-relaxed">

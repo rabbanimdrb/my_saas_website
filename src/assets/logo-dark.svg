@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 110" role="img" aria-label="Pulsive">
+  <title>Pulsive</title>
+  <g transform="translate(0, 5)">
+    <path d="
+      M 8.8 0
+      L 61.6 0
+      A 38.5 38.5 0 0 1 61.6 77
+      L 33 77
+      L 33 105.6
+      Q 33 110, 28.6 110
+      L 4.4 110
+      Q 0 110, 0 105.6
+      L 0 4.4
+      Q 0 0, 4.4 0
+      Z" fill="#FFFFFF"/>
+    <ellipse cx="67.76" cy="42.35" rx="22" ry="22" fill="#03173B"/>
+    <polyline points="46.2,42.35 51.7,42.35 55,36.3 58.3,50.6 61.6,30.8 64.9,48.4 68.2,42.35 83.6,42.35"
+              fill="none" stroke="#FFFFFF" stroke-width="3.3"
+              stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="83.6" cy="42.35" r="3.5" fill="#06B6D4"/>
+  </g>
+  <text x="125" y="78" font-family="Inter, -apple-system, system-ui, sans-serif"
+        font-size="64" font-weight="600" letter-spacing="-2.8" fill="#FFFFFF">Pulsive</text>
+</svg>

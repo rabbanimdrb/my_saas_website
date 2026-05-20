@@ -43,7 +43,7 @@ const PricingSection = () => {
           <div className="relative rounded-2xl border border-primary/40 bg-hero p-8 shadow-2xl">
             {/* Early bird badge */}
             <div className="absolute -top-4 left-1/2 -translate-x-1/2">
-              <span className="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full bg-accent text-accent-foreground text-xs font-bold uppercase tracking-widest shadow-lg">
+              <span className="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full bg-primary text-primary-foreground text-xs font-semibold uppercase tracking-widest shadow-lg">
                 <Zap className="w-3 h-3" />
                 First 100 Customers Only
               </span>
@@ -53,7 +53,7 @@ const PricingSection = () => {
               <p className="text-hero-muted text-sm mb-2">Early Adopter Plan</p>
               <div className="flex items-end justify-center gap-1">
                 <span className="text-hero-muted text-lg">₹</span>
-                <span className="font-display text-6xl font-bold text-white">30,000</span>
+                <span className="font-display text-6xl font-semibold text-white">30,000</span>
               </div>
               <p className="text-hero-muted text-sm mt-1">+ GST &nbsp;/&nbsp; year</p>
             </div>
