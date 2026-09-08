@@ -1,23 +1,6 @@
 import { motion } from "framer-motion";
 import { Star } from "lucide-react";
-
-const testimonials = [
-  {
-    quote: "We replaced 3 SDRs with Pulsive's voice agent. Our pipeline is 2x bigger and our cost per lead dropped by 60%.",
-    name: "Sarah Chen",
-    role: "VP of Sales, TechScale",
-  },
-  {
-    quote: "The WhatsApp automation alone paid for itself in the first month. Our response time went from 4 hours to 4 seconds.",
-    name: "Marcus Rivera",
-    role: "Head of Growth, FinBridge",
-  },
-  {
-    quote: "Finally, a CRM that actually helps close deals instead of just tracking them. The AI pipeline predictions are eerily accurate.",
-    name: "Priya Sharma",
-    role: "CRO, DataSync",
-  },
-];
+import content from "@/content/testimonials.json";
 
 const TestimonialsSection = () => {
   return (
@@ -30,14 +13,14 @@ const TestimonialsSection = () => {
           transition={{ duration: 0.6 }}
           className="text-center max-w-3xl mx-auto mb-16"
         >
-          <p className="text-sm font-semibold text-accent uppercase tracking-widest mb-4">Testimonials</p>
+          <p className="text-sm font-semibold text-accent uppercase tracking-widest mb-4">{content.label}</p>
           <h2 className="font-display text-3xl md:text-5xl font-semibold text-foreground mb-6">
-            Loved by Sales Teams
+            {content.heading}
           </h2>
         </motion.div>
 
         <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-          {testimonials.map((t, i) => (
+          {content.items.map((t, i) => (
             <motion.div
               key={t.name}
               initial={{ opacity: 0, y: 20 }}

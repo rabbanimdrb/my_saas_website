@@ -1,0 +1,32 @@
+{
+  "label": "The Solution",
+  "heading": "AI That Sells",
+  "headingHighlight": "While You Sleep",
+  "subheading": "An AI-first execution platform that replaces headcount with intelligence.",
+  "items": [
+    {
+      "icon": "Phone",
+      "title": "AI Voice Agent",
+      "description": "Automatically qualify leads, make follow-up calls, and book meetings — 24/7. Your tireless AI SDR.",
+      "gradient": "from-primary to-primary/60"
+    },
+    {
+      "icon": "MessageSquare",
+      "title": "WhatsApp & Email Automation",
+      "description": "Trigger instant WhatsApp messages and email sequences based on pipeline actions. Never miss a touchpoint.",
+      "gradient": "from-accent to-accent/60"
+    },
+    {
+      "icon": "BarChart3",
+      "title": "Smart Sales Pipeline",
+      "description": "Visual pipeline with AI-driven deal scoring, stage predictions, and revenue forecasting in real-time.",
+      "gradient": "from-primary to-accent"
+    },
+    {
+      "icon": "Workflow",
+      "title": "Workflow Automation",
+      "description": "Build custom workflows that automate repetitive tasks. If-this-then-that logic for your entire sales process.",
+      "gradient": "from-accent to-primary"
+    }
+  ]
+}

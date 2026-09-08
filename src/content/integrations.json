@@ -1,0 +1,10 @@
+{
+  "label": "Integrations",
+  "heading": "Connects With Your",
+  "headingHighlight": "Entire Stack",
+  "subheading": "Plug into the tools your team already uses — no migration headaches. Bi-directional sync out of the box.",
+  "items": [
+    "Salesforce", "HubSpot", "Google Ads", "Meta Ads", "Slack", "Zapier",
+    "Twilio", "Mailchimp", "Calendly", "Stripe", "Zoom", "Google Sheets"
+  ]
+}

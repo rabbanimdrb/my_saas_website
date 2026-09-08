@@ -1,0 +1,48 @@
+{
+  "label": "Features",
+  "heading": "Everything You Need to",
+  "headingHighlight": "Dominate Sales",
+  "subheading": "A complete AI sales execution stack — not just another CRM with a chatbot bolted on.",
+  "items": [
+    {
+      "icon": "Bot",
+      "title": "AI Voice Agent",
+      "description": "Autonomous outbound and inbound calling that qualifies leads, handles objections, and books meetings on your calendar."
+    },
+    {
+      "icon": "Phone",
+      "title": "Hybrid Calling System",
+      "description": "Seamlessly switch between AI and human agents. Your reps pick up exactly where AI left off."
+    },
+    {
+      "icon": "MessageCircle",
+      "title": "WhatsApp API Automation",
+      "description": "Send templated messages, trigger reminders, and manage conversations directly from your pipeline."
+    },
+    {
+      "icon": "Mail",
+      "title": "Email Sequences",
+      "description": "Drip campaigns that adapt based on lead behavior. AI writes, sends, and optimizes your outreach."
+    },
+    {
+      "icon": "BarChart3",
+      "title": "Visual Pipeline",
+      "description": "Drag-and-drop deal management with AI-powered stage predictions and win probability scoring."
+    },
+    {
+      "icon": "Workflow",
+      "title": "Custom Workflow Builder",
+      "description": "No-code automation builder. Create complex multi-step workflows with conditional logic and triggers."
+    },
+    {
+      "icon": "FileText",
+      "title": "Custom Reports",
+      "description": "Build reports tailored to your KPIs. Track conversion rates, rep performance, and revenue metrics your way."
+    },
+    {
+      "icon": "Shield",
+      "title": "Enterprise Security",
+      "description": "SOC2-ready infrastructure with role-based access, audit logs, and data encryption at rest and in transit."
+    }
+  ]
+}

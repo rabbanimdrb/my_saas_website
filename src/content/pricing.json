@@ -1,0 +1,22 @@
+{
+  "label": "Pricing",
+  "heading": "Simple, Transparent Pricing",
+  "subheading": "One plan. Everything included. No surprises.",
+  "badge": "First 100 Customers Only",
+  "planName": "Early Adopter Plan",
+  "currency": "₹",
+  "price": "30,000",
+  "period": "+ GST / year",
+  "features": [
+    "AI Voice Agent (inbound & outbound)",
+    "WhatsApp & Email automation",
+    "Pipeline CRM & deal tracking",
+    "AI-powered pipeline predictions",
+    "Integrations (Salesforce, HubSpot & more)",
+    "Reporting & analytics dashboard",
+    "Dedicated onboarding support",
+    "SOC2-compliant infrastructure"
+  ],
+  "ctaButton": "Claim Early Adopter Offer",
+  "footnote": "Price locks in for life as long as your subscription is active."
+}

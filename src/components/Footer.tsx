@@ -1,4 +1,5 @@
 import logo from "@/assets/logo-dark.svg";
+import content from "@/content/footer.json";
 
 const Footer = () => {
   return (
@@ -9,13 +10,13 @@ const Footer = () => {
             <img src={logo} alt="Pulsive" className="h-8 w-auto" />
           </a>
           <div className="flex items-center gap-8">
-            {["Privacy", "Terms", "Security"].map((link) => (
+            {content.links.map((link) => (
               <span key={link} className="text-sm text-hero-muted/50 cursor-not-allowed" title="Coming soon">
                 {link}
               </span>
             ))}
           </div>
-          <p className="text-sm text-hero-muted">© 2026 Pulsive. All rights reserved.</p>
+          <p className="text-sm text-hero-muted">{content.copyright}</p>
         </div>
       </div>
     </footer>

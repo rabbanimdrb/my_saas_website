@@ -1,0 +1,25 @@
+{
+  "label": "How It Works",
+  "heading": "Three Steps to",
+  "headingHighlight": "Revenue Autopilot",
+  "steps": [
+    {
+      "icon": "Magnet",
+      "step": "01",
+      "title": "Capture",
+      "description": "Leads flow in from forms, ads, WhatsApp, and integrations. AI instantly scores and routes them."
+    },
+    {
+      "icon": "Zap",
+      "step": "02",
+      "title": "Automate",
+      "description": "AI Voice Agent qualifies leads, triggers follow-ups via WhatsApp & email, and updates pipeline automatically."
+    },
+    {
+      "icon": "Trophy",
+      "step": "03",
+      "title": "Close",
+      "description": "Your reps focus only on hot, qualified deals. AI handles the rest — converting more with less effort."
+    }
+  ]
+}

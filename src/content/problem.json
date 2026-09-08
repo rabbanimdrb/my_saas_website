@@ -1,0 +1,27 @@
+{
+  "label": "The Problem",
+  "heading": "Your Sales Team Is Leaking Revenue",
+  "subheading": "Most sales teams lose deals not because of bad products — but because of broken processes.",
+  "items": [
+    {
+      "icon": "Clock",
+      "title": "Missed Follow-Ups",
+      "description": "Your sales reps forget to follow up with 40% of qualified leads. Deals slip through the cracks silently."
+    },
+    {
+      "icon": "AlertTriangle",
+      "title": "Manual Lead Qualification",
+      "description": "Reps waste hours qualifying leads that never convert. Your best closers are stuck on low-value tasks."
+    },
+    {
+      "icon": "Eye",
+      "title": "Zero Pipeline Visibility",
+      "description": "No clear view of deal stages, bottlenecks, or forecasting. You're managing revenue blindfolded."
+    },
+    {
+      "icon": "Users",
+      "title": "Headcount Dependency",
+      "description": "Scaling revenue means hiring more reps. Your growth is directly tied to payroll — not efficiency."
+    }
+  ]
+}

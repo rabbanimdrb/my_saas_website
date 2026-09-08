@@ -1,17 +1,7 @@
 import { motion } from "framer-motion";
 import { Check, Zap } from "lucide-react";
 import ContactSalesButton from "@/components/ContactSalesButton";
-
-const features = [
-  "AI Voice Agent (inbound & outbound)",
-  "WhatsApp & Email automation",
-  "Pipeline CRM & deal tracking",
-  "AI-powered pipeline predictions",
-  "Integrations (Salesforce, HubSpot & more)",
-  "Reporting & analytics dashboard",
-  "Dedicated onboarding support",
-  "SOC2-compliant infrastructure",
-];
+import content from "@/content/pricing.json";
 
 const PricingSection = () => {
   return (
@@ -24,12 +14,12 @@ const PricingSection = () => {
           transition={{ duration: 0.6 }}
           className="text-center max-w-3xl mx-auto mb-16"
         >
-          <p className="text-sm font-semibold text-accent uppercase tracking-widest mb-4">Pricing</p>
+          <p className="text-sm font-semibold text-accent uppercase tracking-widest mb-4">{content.label}</p>
           <h2 className="font-display text-3xl md:text-5xl font-bold text-hero-foreground mb-6">
-            Simple, Transparent Pricing
+            {content.heading}
           </h2>
           <p className="text-lg text-hero-muted">
-            One plan. Everything included. No surprises.
+            {content.subheading}
           </p>
         </motion.div>
 
@@ -45,21 +35,21 @@ const PricingSection = () => {
             <div className="absolute -top-4 left-1/2 -translate-x-1/2">
               <span className="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full bg-primary text-primary-foreground text-xs font-semibold uppercase tracking-widest shadow-lg">
                 <Zap className="w-3 h-3" />
-                First 100 Customers Only
+                {content.badge}
               </span>
             </div>
 
             <div className="text-center mb-8 pt-2">
-              <p className="text-hero-muted text-sm mb-2">Early Adopter Plan</p>
+              <p className="text-hero-muted text-sm mb-2">{content.planName}</p>
               <div className="flex items-end justify-center gap-1">
-                <span className="text-hero-muted text-lg">₹</span>
-                <span className="font-display text-6xl font-semibold text-white">30,000</span>
+                <span className="text-hero-muted text-lg">{content.currency}</span>
+                <span className="font-display text-6xl font-semibold text-white">{content.price}</span>
               </div>
-              <p className="text-hero-muted text-sm mt-1">+ GST &nbsp;/&nbsp; year</p>
+              <p className="text-hero-muted text-sm mt-1">{content.period}</p>
             </div>
 
             <ul className="space-y-3 mb-8">
-              {features.map((f) => (
+              {content.features.map((f) => (
                 <li key={f} className="flex items-start gap-3">
                   <Check className="w-5 h-5 text-accent shrink-0 mt-0.5" />
                   <span className="text-hero-muted text-sm">{f}</span>
@@ -68,11 +58,11 @@ const PricingSection = () => {
             </ul>
 
             <ContactSalesButton className="w-full bg-primary hover:bg-primary/90 glow-primary">
-              Claim Early Adopter Offer
+              {content.ctaButton}
             </ContactSalesButton>
 
             <p className="text-center text-xs text-hero-muted mt-4">
-              Price locks in for life as long as your subscription is active.
+              {content.footnote}
             </p>
           </div>
         </motion.div>

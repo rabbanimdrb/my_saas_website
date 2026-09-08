@@ -1,0 +1,201 @@
+backend:
+  name: git-gateway
+  branch: main
+
+local_backend: true
+
+publish_mode: simple
+media_folder: "public/uploads"
+public_folder: "/uploads"
+
+collections:
+  - name: "seo"
+    label: "SEO Settings"
+    files:
+      - file: "src/content/seo.json"
+        label: "Site SEO & Social Tags"
+        name: "seo"
+        fields:
+          - { label: "Page Title", name: "title", widget: "string" }
+          - { label: "Meta Description", name: "description", widget: "text" }
+          - { label: "Open Graph Title", name: "ogTitle", widget: "string" }
+          - { label: "Open Graph Description", name: "ogDescription", widget: "text" }
+          - { label: "Open Graph Image", name: "ogImage", widget: "image" }
+          - { label: "Twitter Title", name: "twitterTitle", widget: "string" }
+          - { label: "Twitter Description", name: "twitterDescription", widget: "text" }
+          - { label: "Twitter Image", name: "twitterImage", widget: "image" }
+
+  - name: "pages"
+    label: "Homepage Sections"
+    files:
+      - file: "src/content/navbar.json"
+        label: "Navbar"
+        name: "navbar"
+        fields:
+          - { label: "Top Badge", name: "badge", widget: "string" }
+          - { label: "Contact Sales Button Text", name: "ctaButton", widget: "string" }
+          - label: "Nav Links"
+            name: "links"
+            widget: "list"
+            fields:
+              - { label: "Label", name: "label", widget: "string" }
+              - { label: "Link (e.g. #features)", name: "href", widget: "string" }
+
+      - file: "src/content/hero.json"
+        label: "Hero Section"
+        name: "hero"
+        fields:
+          - { label: "Top Badge", name: "badge", widget: "string" }
+          - { label: "Headline", name: "headline", widget: "string" }
+          - { label: "Headline Highlight", name: "headlineHighlight", widget: "string" }
+          - { label: "Subheadline", name: "subheadline", widget: "text" }
+          - { label: "Primary Button Text", name: "primaryButton", widget: "string" }
+          - { label: "Secondary Button Text", name: "secondaryButton", widget: "string" }
+
+      - file: "src/content/problem.json"
+        label: "Problem Section"
+        name: "problem"
+        fields:
+          - { label: "Section Label", name: "label", widget: "string" }
+          - { label: "Heading", name: "heading", widget: "string" }
+          - { label: "Subheading", name: "subheading", widget: "text" }
+          - label: "Problems"
+            name: "items"
+            widget: "list"
+            fields:
+              - { label: "Icon", name: "icon", widget: "select", options: ["Clock", "AlertTriangle", "Eye", "Users", "Shield", "Bot", "Phone", "Mail", "MessageCircle", "BarChart3", "Workflow", "FileText", "Magnet", "Zap", "Trophy", "MessageSquare", "PieChart", "TrendingUp", "Filter", "Download"] }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+
+      - file: "src/content/solution.json"
+        label: "Solution Section"
+        name: "solution"
+        fields:
+          - { label: "Section Label", name: "label", widget: "string" }
+          - { label: "Heading", name: "heading", widget: "string" }
+          - { label: "Heading Highlight", name: "headingHighlight", widget: "string" }
+          - { label: "Subheading", name: "subheading", widget: "text" }
+          - label: "Solutions"
+            name: "items"
+            widget: "list"
+            fields:
+              - { label: "Icon", name: "icon", widget: "select", options: ["Clock", "AlertTriangle", "Eye", "Users", "Shield", "Bot", "Phone", "Mail", "MessageCircle", "BarChart3", "Workflow", "FileText", "Magnet", "Zap", "Trophy", "MessageSquare", "PieChart", "TrendingUp", "Filter", "Download"] }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+              - { label: "Gradient (advanced, CSS classes)", name: "gradient", widget: "string" }
+
+      - file: "src/content/how-it-works.json"
+        label: "How It Works Section"
+        name: "how-it-works"
+        fields:
+          - { label: "Section Label", name: "label", widget: "string" }
+          - { label: "Heading", name: "heading", widget: "string" }
+          - { label: "Heading Highlight", name: "headingHighlight", widget: "string" }
+          - label: "Steps"
+            name: "steps"
+            widget: "list"
+            fields:
+              - { label: "Icon", name: "icon", widget: "select", options: ["Clock", "AlertTriangle", "Eye", "Users", "Shield", "Bot", "Phone", "Mail", "MessageCircle", "BarChart3", "Workflow", "FileText", "Magnet", "Zap", "Trophy", "MessageSquare", "PieChart", "TrendingUp", "Filter", "Download"] }
+              - { label: "Step Number", name: "step", widget: "string" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+
+      - file: "src/content/features.json"
+        label: "Features Section"
+        name: "features"
+        fields:
+          - { label: "Section Label", name: "label", widget: "string" }
+          - { label: "Heading", name: "heading", widget: "string" }
+          - { label: "Heading Highlight", name: "headingHighlight", widget: "string" }
+          - { label: "Subheading", name: "subheading", widget: "text" }
+          - label: "Features"
+            name: "items"
+            widget: "list"
+            fields:
+              - { label: "Icon", name: "icon", widget: "select", options: ["Clock", "AlertTriangle", "Eye", "Users", "Shield", "Bot", "Phone", "Mail", "MessageCircle", "BarChart3", "Workflow", "FileText", "Magnet", "Zap", "Trophy", "MessageSquare", "PieChart", "TrendingUp", "Filter", "Download"] }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+
+      - file: "src/content/integrations.json"
+        label: "Integrations Section"
+        name: "integrations"
+        fields:
+          - { label: "Section Label", name: "label", widget: "string" }
+          - { label: "Heading", name: "heading", widget: "string" }
+          - { label: "Heading Highlight", name: "headingHighlight", widget: "string" }
+          - { label: "Subheading", name: "subheading", widget: "text" }
+          - { label: "Integration Names (one per line)", name: "items", widget: "list" }
+
+      - file: "src/content/reporting.json"
+        label: "Reporting Section"
+        name: "reporting"
+        fields:
+          - { label: "Section Label", name: "label", widget: "string" }
+          - { label: "Heading", name: "heading", widget: "string" }
+          - { label: "Heading Highlight", name: "headingHighlight", widget: "string" }
+          - { label: "Description", name: "description", widget: "text" }
+          - label: "Bullets"
+            name: "bullets"
+            widget: "list"
+            fields:
+              - { label: "Icon", name: "icon", widget: "select", options: ["Clock", "AlertTriangle", "Eye", "Users", "Shield", "Bot", "Phone", "Mail", "MessageCircle", "BarChart3", "Workflow", "FileText", "Magnet", "Zap", "Trophy", "MessageSquare", "PieChart", "TrendingUp", "Filter", "Download"] }
+              - { label: "Text", name: "text", widget: "string" }
+
+      - file: "src/content/pricing.json"
+        label: "Pricing Section"
+        name: "pricing"
+        fields:
+          - { label: "Section Label", name: "label", widget: "string" }
+          - { label: "Heading", name: "heading", widget: "string" }
+          - { label: "Subheading", name: "subheading", widget: "string" }
+          - { label: "Badge Text", name: "badge", widget: "string" }
+          - { label: "Plan Name", name: "planName", widget: "string" }
+          - { label: "Currency Symbol", name: "currency", widget: "string" }
+          - { label: "Price", name: "price", widget: "string" }
+          - { label: "Billing Period Text", name: "period", widget: "string" }
+          - { label: "Included Features (one per line)", name: "features", widget: "list" }
+          - { label: "CTA Button Text", name: "ctaButton", widget: "string" }
+          - { label: "Footnote", name: "footnote", widget: "string" }
+
+      - file: "src/content/testimonials.json"
+        label: "Testimonials Section"
+        name: "testimonials"
+        fields:
+          - { label: "Section Label", name: "label", widget: "string" }
+          - { label: "Heading", name: "heading", widget: "string" }
+          - label: "Testimonials"
+            name: "items"
+            widget: "list"
+            fields:
+              - { label: "Quote", name: "quote", widget: "text" }
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Role / Company", name: "role", widget: "string" }
+
+      - file: "src/content/faq.json"
+        label: "FAQ Section"
+        name: "faq"
+        fields:
+          - { label: "Section Label", name: "label", widget: "string" }
+          - { label: "Heading", name: "heading", widget: "string" }
+          - label: "Questions"
+            name: "items"
+            widget: "list"
+            fields:
+              - { label: "Question", name: "q", widget: "string" }
+              - { label: "Answer", name: "a", widget: "text" }
+
+      - file: "src/content/cta.json"
+        label: "Bottom CTA Section"
+        name: "cta"
+        fields:
+          - { label: "Heading", name: "heading", widget: "string" }
+          - { label: "Heading Highlight", name: "headingHighlight", widget: "string" }
+          - { label: "Subheading", name: "subheading", widget: "text" }
+          - { label: "Button Text", name: "button", widget: "string" }
+
+      - file: "src/content/footer.json"
+        label: "Footer"
+        name: "footer"
+        fields:
+          - { label: "Copyright Text", name: "copyright", widget: "string" }
+          - { label: "Link Labels (not yet active links, one per line)", name: "links", widget: "list" }

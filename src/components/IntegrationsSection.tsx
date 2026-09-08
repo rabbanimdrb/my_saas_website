@@ -1,9 +1,5 @@
 import { motion } from "framer-motion";
-
-const integrations = [
-  "Salesforce", "HubSpot", "Google Ads", "Meta Ads", "Slack", "Zapier",
-  "Twilio", "Mailchimp", "Calendly", "Stripe", "Zoom", "Google Sheets",
-];
+import content from "@/content/integrations.json";
 
 const IntegrationsSection = () => {
   return (
@@ -16,17 +12,17 @@ const IntegrationsSection = () => {
           transition={{ duration: 0.6 }}
           className="text-center max-w-3xl mx-auto mb-16"
         >
-          <p className="text-sm font-semibold text-accent uppercase tracking-widest mb-4">Integrations</p>
+          <p className="text-sm font-semibold text-accent uppercase tracking-widest mb-4">{content.label}</p>
           <h2 className="font-display text-3xl md:text-5xl font-semibold text-hero-foreground mb-6">
-            Connects With Your <span className="text-gradient">Entire Stack</span>
+            {content.heading} <span className="text-gradient">{content.headingHighlight}</span>
           </h2>
           <p className="text-lg text-hero-muted">
-            Plug into the tools your team already uses — no migration headaches. Bi-directional sync out of the box.
+            {content.subheading}
           </p>
         </motion.div>
 
         <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-4 max-w-4xl mx-auto">
-          {integrations.map((name, i) => (
+          {content.items.map((name, i) => (
             <motion.div
               key={name}
               initial={{ opacity: 0, scale: 0.9 }}

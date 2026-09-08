@@ -1,5 +1,13 @@
 import { motion } from "framer-motion";
-import { PieChart, TrendingUp, Filter, Download } from "lucide-react";
+import content from "@/content/reporting.json";
+import { iconMap } from "@/lib/icons";
+
+const chartBars = [
+  { label: "AI Voice", value: 42, color: "bg-primary" },
+  { label: "WhatsApp", value: 28, color: "bg-accent" },
+  { label: "Email", value: 18, color: "bg-primary/60" },
+  { label: "Manual", value: 12, color: "bg-accent/60" },
+];
 
 const ReportingSection = () => {
   return (
@@ -12,28 +20,26 @@ const ReportingSection = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <p className="text-sm font-semibold text-accent uppercase tracking-widest mb-4">Custom Reporting</p>
+            <p className="text-sm font-semibold text-accent uppercase tracking-widest mb-4">{content.label}</p>
             <h2 className="font-display text-3xl md:text-4xl font-semibold text-foreground mb-6">
-              Reports Built for <span className="text-gradient">Your Business</span>
+              {content.heading} <span className="text-gradient">{content.headingHighlight}</span>
             </h2>
             <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-              Stop wrestling with rigid dashboards. Build custom reports that answer your specific business questions — from conversion funnels to rep performance to revenue attribution.
+              {content.description}
             </p>
 
             <div className="space-y-4">
-              {[
-                { icon: PieChart, text: "Drag-and-drop report builder with 50+ metrics" },
-                { icon: TrendingUp, text: "Real-time data with automated refresh" },
-                { icon: Filter, text: "Advanced filters by team, region, product, and date" },
-                { icon: Download, text: "Export to PDF, CSV, or schedule automated delivery" },
-              ].map((item, i) => (
-                <div key={i} className="flex items-center gap-3">
-                  <div className="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
-                    <item.icon className="w-4 h-4 text-primary" />
+              {content.bullets.map((item, i) => {
+                const Icon = iconMap[item.icon];
+                return (
+                  <div key={i} className="flex items-center gap-3">
+                    <div className="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
+                      <Icon className="w-4 h-4 text-primary" />
+                    </div>
+                    <p className="text-foreground">{item.text}</p>
                   </div>
-                  <p className="text-foreground">{item.text}</p>
-                </div>
-              ))}
+                );
+              })}
             </div>
           </motion.div>
 
@@ -50,12 +56,7 @@ const ReportingSection = () => {
                   <span className="font-display text-lg">Revenue by Channel</span>
                   <span className="text-hero-muted text-xs">Last 30 days</span>
                 </div>
-                {[
-                  { label: "AI Voice", value: 42, color: "bg-primary" },
-                  { label: "WhatsApp", value: 28, color: "bg-accent" },
-                  { label: "Email", value: 18, color: "bg-primary/60" },
-                  { label: "Manual", value: 12, color: "bg-accent/60" },
-                ].map((bar) => (
+                {chartBars.map((bar) => (
                   <div key={bar.label} className="space-y-1.5">
                     <div className="flex justify-between text-sm">
                       <span className="text-hero-muted">{bar.label}</span>

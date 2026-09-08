@@ -1,0 +1,12 @@
+{
+  "label": "Custom Reporting",
+  "heading": "Reports Built for",
+  "headingHighlight": "Your Business",
+  "description": "Stop wrestling with rigid dashboards. Build custom reports that answer your specific business questions — from conversion funnels to rep performance to revenue attribution.",
+  "bullets": [
+    { "icon": "PieChart", "text": "Drag-and-drop report builder with 50+ metrics" },
+    { "icon": "TrendingUp", "text": "Real-time data with automated refresh" },
+    { "icon": "Filter", "text": "Advanced filters by team, region, product, and date" },
+    { "icon": "Download", "text": "Export to PDF, CSV, or schedule automated delivery" }
+  ]
+}

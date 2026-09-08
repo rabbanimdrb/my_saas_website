@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { ArrowRight, PlayCircle } from "lucide-react";
 import ContactSalesButton from "@/components/ContactSalesButton";
 import heroDashboard from "@/assets/hero-dashboard.png";
+import content from "@/content/hero.json";
 
 const HeroSection = () => {
   return (
@@ -19,26 +20,26 @@ const HeroSection = () => {
         >
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-accent/30 bg-accent/10 text-accent text-sm font-medium mb-8">
             <span className="w-2 h-2 rounded-full bg-accent animate-pulse" />
-            AI-Powered Sales Execution Platform
+            {content.badge}
           </div>
 
           <h1 className="font-display text-4xl md:text-6xl lg:text-7xl font-semibold text-hero-foreground leading-[1.1] mb-6">
-            Your AI Sales Team That{" "}
-            <span className="text-gradient">Never Sleeps</span>
+            {content.headline}{" "}
+            <span className="text-gradient">{content.headlineHighlight}</span>
           </h1>
 
           <p className="text-lg md:text-xl text-hero-muted max-w-2xl mx-auto mb-10 leading-relaxed">
-            Automate lead qualification with AI Voice Agents, trigger WhatsApp &amp; email follow-ups instantly, and close more deals — with fewer salespeople.
+            {content.subheadline}
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <ContactSalesButton size="lg" className="text-base px-8 py-6 bg-primary hover:bg-primary/90 glow-primary">
-              Contact Sales
+              {content.primaryButton}
               <ArrowRight className="ml-2 h-5 w-5" />
             </ContactSalesButton>
             <ContactSalesButton size="lg" className="text-base px-8 py-6 border border-white/10 text-hero-foreground hover:bg-white/5 bg-transparent">
               <PlayCircle className="mr-2 h-5 w-5" />
-              Book a Live Demo
+              {content.secondaryButton}
             </ContactSalesButton>
           </div>
         </motion.div>

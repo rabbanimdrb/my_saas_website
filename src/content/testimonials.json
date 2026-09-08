@@ -1,0 +1,21 @@
+{
+  "label": "Testimonials",
+  "heading": "Loved by Sales Teams",
+  "items": [
+    {
+      "quote": "We replaced 3 SDRs with Pulsive's voice agent. Our pipeline is 2x bigger and our cost per lead dropped by 60%.",
+      "name": "Sarah Chen",
+      "role": "VP of Sales, TechScale"
+    },
+    {
+      "quote": "The WhatsApp automation alone paid for itself in the first month. Our response time went from 4 hours to 4 seconds.",
+      "name": "Marcus Rivera",
+      "role": "Head of Growth, FinBridge"
+    },
+    {
+      "quote": "Finally, a CRM that actually helps close deals instead of just tracking them. The AI pipeline predictions are eerily accurate.",
+      "name": "Priya Sharma",
+      "role": "CRO, DataSync"
+    }
+  ]
+}
